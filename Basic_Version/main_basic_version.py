@@ -2,6 +2,7 @@ import argparse
 import json
 import re
 import random
+import os
 
 
 def startup():
@@ -9,8 +10,9 @@ def startup():
 
     @return: args, 包含题库JSON文件的路径与文章的名称(如有)
     '''
+    default_json_path = os.path.join(os.path.split(os.path.realpath(__file__))[0], "data.json")
     parser = argparse.ArgumentParser(description='Crossword puzzle')
-    parser.add_argument('--path', type=str, default="data.json",
+    parser.add_argument('--path', type=str, default=default_json_path,
         help='path of data JSON file')
     parser.add_argument('--article', type=str, default="random",
         help='name of article')
@@ -20,19 +22,15 @@ def startup():
 
 
 def read_article(args):
-    ''' 读取相应的题库 解析JSON⽂件
+    ''' 读取相应的题库 解析JSON文件
 
     如果遇到以下错误则返回None:
-
         (1) 题库JSON文件路径不正确
-
         (2) JSON文件中的某个字典的某个key名称不正确
-
         (3) JSON文件中的某个字典的某个value的类型不正确
-
         (4) 给定article参数但是题库JSON文件中不存在这一篇文章
 
-    @return: selected_article, 选择的⼀份⽂章; 或者 None
+    @return: selected_article, 选择的1份文章; 或者 None
     '''
     # 载入JSON文件
     try:
@@ -40,6 +38,9 @@ def read_article(args):
             questions = json.load(file)
     except:
         print("Error 404: Data JSON file {} NOT Found! ".format(args.path))
+        return None
+    
+    if not isinstance(questions, list):
         return None
     
     # 判断JSON文件中的各个字典是否合法
