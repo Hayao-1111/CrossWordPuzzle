@@ -170,7 +170,7 @@ def main():
 
     # 侧边栏
     st.sidebar.header("1. 选择 JSON")
-    st.sidebar.write("**勾选**下面的选项以自行上传文件，否则使用默认JSON文件:")
+    st.sidebar.write("**勾选**下面的选项以自行上传题库文件，否则使用默认题库:")
     use_uploaded_json = st.sidebar.checkbox("自行上传JSON文件")
 
     st.sidebar.write("---")
