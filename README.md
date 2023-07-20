@@ -81,7 +81,7 @@ python main_basic_version.py --path path/to/file.json --article sample1
 
 ### 2.1 项目环境
 
-此[GUI版](./GUI_GUI_Version)使用`streamlit`库搭建GUI框架。`streamlit`版本为1.24.1。你可以使用如下命令安装：
+此[GUI版](./GUI_Version)使用`streamlit`库搭建GUI框架。`streamlit`版本为1.24.1。你可以使用如下命令安装：
 
 ```bash
 pip install streamlit
@@ -152,7 +152,7 @@ streamlit run main_GUI_version.py
 ## NOTE
 
 All the text files are encoded with `utf-8`, End-of-Line-Sequence is `LF`.  
-You can visit [it](https://crosswordpuzzle-summer2023-sunxl18.streamlit.app/) if you have access to science network.
+You can visit [this link](https://crosswordpuzzle-summer2023-sunxl18.streamlit.app/) if you have access to scientific network.
 
 **Author**: sunxl18@foxmail.com  
 **Date**: 2023/7/20  
