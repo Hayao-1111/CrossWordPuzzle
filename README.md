@@ -151,7 +151,8 @@ streamlit run main_GUI_version.py
 
 ## NOTE
 
-All the text files are encoded with `utf-8`, End-of-Line-Sequence is `LF`.
+All the text files are encoded with `utf-8`, End-of-Line-Sequence is `LF`.  
+You can visit [it](https://crosswordpuzzle-summer2023-sunxl18.streamlit.app/) if you have access to science network.
 
 **Author**: sunxl18@foxmail.com  
 **Date**: 2023/7/20  
