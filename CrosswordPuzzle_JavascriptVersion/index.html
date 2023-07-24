@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>文章填词游戏</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <h1>文章填词游戏</h1>
+  <label for="file-upload">选择上传题库 JSON 文件：</label>
+  <input type="file" id="file-upload" accept=".json">
+  <br><br>
+  <button id="parse-btn" disabled>解析 JSON 文件</button>
+  <br><br>
+  <div id="select-article-fields"></div>
+  <div id="input-fields"></div>
+  <br>
+  <button id="submit-btn" disabled>提交</button>
+  <br><br>
+  <p id="result"></p>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

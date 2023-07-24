@@ -12,6 +12,7 @@
 	* [2.1 项目环境](#21-项目环境)
 	* [2.2 使用配置](#22-使用配置)
 	* [2.3 游戏说明](#23-游戏说明)
+- [3. JS版本](#3-js版本)
 - [NOTE](#note)
 
 本游戏分**基础版**和**GUI版**两个版本：
@@ -146,7 +147,11 @@ streamlit run main_GUI_version.py
   - JSON文件非`utf-8`编码错误；通过`UnicodeDecodeError`；
   - JSON文件格式不符合规范导致不能解析的错误；通过`json.JSONDecodeError`；
 
+## 3. JS版本
 
+增加了Javascript版本，可以完成基本任务（用户需选择题库文件以及文章标题）。
+
+此版本提供比较便捷的GUI界面。双击目录`CrosswordPuzzle_JavascriptVersion`中的`index.html`即可在本地浏览器体验~
 
 
 ## NOTE

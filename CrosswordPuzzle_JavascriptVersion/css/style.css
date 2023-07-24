@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+#input-fields {
+  display: block;
+}
+
+#result {
+  font-weight: 300;
+}
+
+#options {
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  margin-bottom: 10px;
+}
