@@ -151,7 +151,9 @@ streamlit run main_GUI_version.py
 
 增加了Javascript版本，可以完成基本任务（用户需选择题库文件以及文章标题）。
 
-此版本提供简朴而便捷的GUI界面。双击目录`CrosswordPuzzle_JavascriptVersion`中的`index.html`即可在本地浏览器体验~
+此版本提供简朴而便捷的GUI界面。存在在线访问与离线访问两种方法：
+- 在线访问。访问此链接[web-link-by-github-pages](https://hayao-1111.github.io/CrossWordPuzzle/CrosswordPuzzle_JavascriptVersion/index.html)
+- 离线访问。下载目录`CrosswordPuzzle_JavascriptVersion`，双击其中`index.html`即可在本地浏览器体验~
 
 
 ## NOTE
